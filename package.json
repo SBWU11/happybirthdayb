@@ -1,7 +1,7 @@
 {
   "name": "birthday-animation",
   "version": "1.0.0",
-  "description": "A Happy Birthday animation design in CSS3, HTML5, JavaScript",
+  "description": "A Happy Birthday animation design",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
