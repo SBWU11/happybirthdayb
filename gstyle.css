@@ -30,6 +30,8 @@ body{position:relative;font-family:'Poppins',sans-serif;
     width: 320px; /* Increased size */
     height: 240px; /* Using 4:3 aspect ratio */
     z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
 
 .video-container video {
@@ -107,4 +109,15 @@ body{position:relative;font-family:'Poppins',sans-serif;
 
 .audio-button:hover {
     background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Add bottom middle video position */
+.bottom-middle {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 240px;
+    z-index: 1;
 }

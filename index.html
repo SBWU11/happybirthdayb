@@ -92,6 +92,13 @@
     </video>
   </div>
 
+  <!-- Add bottom middle video container -->
+  <div class="video-container bottom-middle">
+    <video autoplay muted loop playsinline>
+      <source src="videos/cuteone.mov" type="video/mp4">
+    </video>
+  </div>
+
   <br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="wrap">
                 <div class="type-wrap">
@@ -155,13 +162,16 @@
 </div>
 
 <script>
-
 setTimeout(function() {
-  $('#ll').hide()
-}, 4000);
-
-setTimeout(function() {
-  $('#home').show()
+    $('#ll').hide();
+    $('#home').show();
+    
+    // Show all videos with a slight delay after loader
+    setTimeout(function() {
+        document.querySelectorAll('.video-container').forEach(function(container) {
+            container.style.opacity = '1';
+        });
+    }, 1000); // 1 second after loader disappears
 }, 4000);
 
 document.getElementById('playButton').addEventListener('click', function() {
